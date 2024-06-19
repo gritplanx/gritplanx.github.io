@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gritplan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="title-banner">
+        <img src="/pictures/logos/GP.png" alt="Website Logo" class="logo">
+        <h1 class="website-name">Gritplan</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="problems-link">Problems</a></li>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="login-link">Login</a></li>
+            <li><a href="#" id="logout-link" style="display:none;">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div id="home-section">
+        <h1>Welcome to the Home Page</h1>
+        <div id="content-home"></div>
+    </div>
+    
+    <div id="problems-section" style="display:none;">
+        <h1>Problems Page</h1>
+   <!--<div id="work"> 
+        <embed src="/data.txt">
+            
+            <object data="/txt-files/src.txt" type="text/plain"
+            width="500" style="height: 300px">
+            <a href="/txt-files/src.txt">No Support?</a>
+            </object>
+       
+        
+        </div>--> 
+
+        <div id="content"></div>
+        
+        
+        
+            <div id="add-problem">
+            <h2>Add a Problem</h2>
+            <form id="problem-form">
+                <input type="text" id="problem-title" placeholder="Problem Title" required>
+                <textarea id="problem-description" placeholder="Problem Description" required></textarea>
+                <button type="submit">Add Problem</button>
+            </form>
+        </div>
+        <div id="problems-list">
+            <h2>Problems</h2>
+            <ul id="problems-container"></ul>
+        </div>
+    </div>
+    
+    <div id="about-section" style="display:none;">
+        <h1>About Page</h1>
+        <div id="owners_case_please-help"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
